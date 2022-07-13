@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calcBody {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #182825;
+    color: #ad8350;
+    padding: 32px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    color: blueviolet;
+}
+
+#author {
+    font-size: 32px;
+    color: #92dce5;
+}
+
+.prevNum {
+    font-size: 24px;
+    color: #ad83509c;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: bottom;
+    padding: 16px;
+    border: 2px solid #6e75a8;
+    border-radius: 8px;
+    font-size: 48px;
+    height: 82px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid #6e75a8;
+    background-color: #182825;
+    color: #ad8350;
+    border-radius: 8px;
+    transition: .3s ease;
+    padding: 24px;
+}
+
+.btn:hover {
+    border: 2px solid #1a2aa3;
+}
+
+.special {
+    cursor: pointer;
+    color: #92dce5;
+    background-color: #4a001f;
+}
+
+.operator {
+    background-color: #776274;
+    color: #92dce5;
+}
+
+.equal {
+    background-color: #776274;
+    color: #92dce5;
+}
+
+.clear {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
